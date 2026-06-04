@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv
+venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Streamlit
+.streamlit/
+.streamlit/config.toml
+
+# Data
+*.csv
+*.xlsx
+*.db
+*.sqlite
+
+# Generated files
+*.png
+*.jpg
+*.pdf
+.cache/
+htmlcov/
+
+# Project specific
+config/local_config.yaml
+results/
+tmp/

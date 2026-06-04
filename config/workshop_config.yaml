@@ -1,0 +1,45 @@
+workshop_id: "WORKSHOP_1"
+location: "Albi, France"
+
+# Machine Configuration
+machines:
+  - station_name: "CLEANING"
+    machine_id: "MACH_CLEAN_01"
+    capacity: 1
+    process_time_mean: 1.5
+    process_time_std: 0.3
+
+  - station_name: "COATING"
+    machine_id: "MACH_COAT_01"
+    capacity: 1
+    process_time_mean: 3.0
+    process_time_std: 0.5
+
+  - station_name: "DRYING"
+    machine_id: "MACH_DRY_01"
+    capacity: 2
+    process_time_mean: 2.0
+    process_time_std: 0.4
+
+  - station_name: "INSPECTION"
+    machine_id: "MACH_INSP_01"
+    capacity: 1
+    process_time_mean: 1.0
+    process_time_std: 0.2
+
+# Operator Configuration
+operators:
+  - operator_id: "OP_001"
+    skills: ["CLEANING", "COATING"]
+
+  - operator_id: "OP_002"
+    skills: ["DRYING", "INSPECTION"]
+
+  - operator_id: "OP_003"
+    skills: ["CLEANING", "COATING", "DRYING"]
+
+# Production Parameters
+production:
+  order_arrival_rate: 2.0  # orders per hour
+  lead_time_target: 24.0   # hours
+  batch_size_range: [5, 50]
